@@ -4,8 +4,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bus ticket booking website</title>
+
+<!-- daisy UI and Tailwind -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- custom css -->
+<link rel="stylesheet" href="styles.css">
+
 </head>
-<body>
+<body class="font-poppins">
+    <!-- navbar section -->
+    <main class="">
+    <div class="navbar bg-base-100 pr-28 pl-28 ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+            
+            
+                <li><a>About </a></li>
+                <li><a>Destination</a></li>
+                
+                <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">D-ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            
+            
+            <li><a>About </a></li>
+            <li><a>Destination</a></li>
+            
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
+      <!-- navbar end -->
+
+      <!-- banner section -->
+       
+<div class=" mx-auto px-28 py-16  ">
+         
+       <div class="hero min-h-screen  rounded-xl  " style="background-image: url(images/banner.png);">
+        
+        <div class="hero-content text-center text-neutral-content w">
+          <div class=" ">
+            <h1 class=" mb-5 text-2xl lg:text-5xl  font-bold">END-TO-END TRAVEL WITH
+                <br>
+                 D-Paribahan</h1>
+            <p class="mb-5">we provided you good journey trip ever</p>
+            <button class="btn  bg-green-500 border-0">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      </main>
+
+
+
+
+
+
+      <!-- coupon section  -->
+      <h1 class="text-center text-3xl font-semibold">Best offer for you</h1>
+      <section class="px-40 py-16   ">
+        
+
+        <div class="  lg:flex   justify-between gap-16 ">
+          <div class="border-solid border-0  h-52 w-auto lg:w-2/4 rounded-xl    flex justify-around bg-yellow-400">
+            <div class="mt-20"><h2 class="text-xl font-bold">15% 0FF</h2>
+                <h5 class="text-sm">On your next purchase</h5>
+                <h5 class="text-sm">use by january 2024</h5></div>
+                <div class=""><img src="images/cupon-devider.png" alt=""></div>
+                
+                <div class="mt-20">
+                    <h3 class="font-bold">NEW15</h3>
+                    <h4 class="text-sm">Coupon Code</h4>
+        
+                </div>
+        </div>
     
+
+        <div class="border-solid border-0 w-auto lg:w-2/4 h-52 rounded-xl  flex justify-around bg-pink-300">
+            <div class="mt-20  "><h2 class="text-xl font-bold">20% 0FF</h2>
+                <h5 class="text-sm">On your next purchase</h5>
+                <h5 class="text-sm">use by january 2024</h5></div>
+                <div class=""><img src="images/cupon-devider.png" alt=""></div>
+
+
+                <div class="mt-20">
+                    <h3 class="font-bold">Couple 20</h3>
+                    <h4 class="text-sm">Coupon Code</h4>
+        
+                </div>
+        </div>
+    
+        
+        </div>
+        
+      </section>
+      <div class="text-center">
+        <button class="  btn btn-outline btn-success"> See all offers</button>
+      </div>
+
+<!-- ticket section -->
+<div class="border-l-green-400  border-b-2 mt-40 my-10"></div>
+
+<h1 class="text-center text-3xl font-semibold  mt-10">D.H Paribahan</h1>
+<p class="text-center  mt-5">we provided you good journey trip ever</p>
+
+
+
+<!-- green line -->
+<section class="  mt-28 ">
+  <div class="pl-64 ">
+  <div class="flex justify-around border-solid border-0 h-3/4 w-5/6 rounded-xl shadow-lg  bg-gray-100">
+
+    <!-- <div class="flex "> -->
+      <div class="flex gap-20 mt-10">
+        <div class="flex gap-2">
+          <div><img src="images/bus-logo.png" alt=""></div>
+          <div>
+            <h2 class="text-2xl font-bold">Greenline Poribahan</h2>
+            <h6>Coach-009-WEB ! AC-business</h6>
+          </div>
+          </div>
+  
+          <div>
+            <button class="btn btn-outline btn-success bg-green-100">
+              <div class="flex gap-2">
+                <div><img src="images/seat-gray.png" alt=""></div>
+                <div>
+                  
+                  <h6>40 seat left</h6>
+                </div>
+                </div>
+  
+            </button>
+          </div>
+      </div>
+
+
+
+  <div class=" "><img src="images/info-devider.png" alt=""></div>
+
+    
+
+<!--  550 tk-->
+
+    <div class="mt-40 ">
+      <div><img src="images/fare.png" alt=""></div>
+      <h2 class="font-semibold">550 taka</h2>
+      <h4>per seat</h4>
+
+    </div>
+
+    </div>
+    
+  </div>
+  
+
+</section>
+
+
+<!-- route -->
+      <div class="relative left-64 bottom-64 p-4 ">
+        <div class="  border-solid border-0 w-auto lg:w-3/6 h-52 rounded-xl   bg-gray-300">
+          <div class="flex justify-between p-4">
+            <div><h4>Route</h4></div>
+            <div><h4>Dhaka-sylhet</h4></div>
+            
+          </div>
+          <div class="border-dashed pr-2 pl-2  border-b-2 "></div>
+          <div class="flex justify-between p-4">
+            <div><h4>Departure Time</h4></div>
+            <div><h4>9.00 Pm</h4></div>
+          </div>
+          <div class="border-dashed pr-2 pl-2  border-b-2 mb-5 bg-gray-300 "></div>
+            
+  
+  
+          <div class="p-4 b">
+            <button class="btn border-0 bg-gray-400 text-xs w-48 ">boarding Point- Laxmipur</button>
+          <button class="btn border-0 bg-gray-400 text-xs w-48">boarding Point- Laxmipur</button>
+          <button class="btn border-0 bg-gray-400 text-xs w-48">Est.Time -11 hour</button>
+          </div>
+  
+  
+        </div>
+        
+  
+  
+  
+      </div>
+
+
+
+
+      <!-- bus seat selection -->
+
+
+
+
+
+
 </body>
 </html>
