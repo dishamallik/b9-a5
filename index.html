@@ -12,10 +12,11 @@
 <!-- custom css -->
 <link rel="stylesheet" href="styles.css">
 
+
 </head>
 <body class="font-poppins">
     <!-- navbar section -->
-    <main class="">
+    <main class="main-screen">
     <div class="navbar bg-base-100 pr-28 pl-28 ">
         <div class="navbar-start">
           <div class="dropdown">
@@ -63,13 +64,13 @@
                 <br>
                  D-Paribahan</h1>
             <p class="mb-5">we provided you good journey trip ever</p>
-            <button class="btn  bg-green-500 border-0">Buy Tickets</button>
+            <button id="buyTicket" class="btn  bg-green-500 border-0">Buy Tickets</button>
           </div>
         </div>
       </div>
       </div>
 
-      </main>
+      
 
 
 
@@ -119,7 +120,8 @@
       </div>
 
 <!-- ticket section -->
-<!-- <div class="border-l-green-400  border-b-2 mt-40 my-10"></div> -->
+<div id="topSection">
+<div class=" border-b-green-400 border-b-4  mt-40 my-10"></div>
 
 <h1 class="text-center text-3xl font-semibold  mt-10">D.H Paribahan</h1>
 <p class="text-center  mt-5">we provided you good journey trip ever</p>
@@ -127,7 +129,7 @@
 
 
 <!-- green line -->
-<section class="  mt-28 ">
+<section class="  mt-10 -mb-36 ">
   <div class="pl-64 ">
   <div class="flex justify-around border-solid border-0 h-3/4 w-5/6 rounded-xl shadow-lg  bg-gray-100">
 
@@ -147,7 +149,7 @@
                 <div><img src="images/seat-gray.png" alt=""></div>
                 <div>
                   
-                  <h6>40 seat left</h6>
+                  <h6 ><span id="seat-Down">8</span> seat left</h6>
                 </div>
                 </div>
   
@@ -179,7 +181,7 @@
 
 
 <!-- route -->
-      <div class="relative left-64 bottom-64 p-4 ">
+      <div class="relative left-64 bottom-36 p-4 ">
         <div class="  border-solid border-0 w-auto lg:w-3/6 h-52 rounded-xl   bg-gray-300">
           <div class="flex justify-between p-4">
             <div><h4>Route</h4></div>
@@ -213,8 +215,8 @@
 
 
       <!-- bus seat selection -->
-      <div class="p-10">
-      <div class="grid grid-cols-2 pl-10 justify-between border-solid border-0  w-auto h-auto rounded-xl   bg-gray-50">
+      <div class="p-10 ">
+      <div class="grid grid-cols-2 pl-10 justify-between border-solid border-0  w-auto h-auto rounded-xl  shadow-2xl  bg-gray-200">
 
       
 
@@ -255,78 +257,34 @@
 <div class="grid grid-rows-10 grid-cols-5 mt-10 gap-10">
   
   <!-- col 1 -->
-    <div><h4>A</h4></div>
-    <div  class="A1" ><button class="btn bg-slate-200" >A1</button></div>
-    <div class="A2"><button class="btn bg-slate-200">A2</button></div>
-    <div class="A3 "><button class="ml-7 btn bg-slate-200">A3</button></div>
-    <div class="A4"><button class="btn bg-slate-200">A4</button></div>
-
+    <div><h4>A</h4></div>  
+    <div class="card">
+    <button onclick="changeColor(this)" id="alert" class="btn">A1</button><span class="hidden">550</span></div>
+    <div class="card" >
+   <button onclick="changeColor(this)" id="alert" class="btn">A2</button><span class="  hidden">550</span></div>
+    <div class="card" >
+   <button onclick="changeColor(this)" id="alert" class=" btn">A3</button><span class="hidden">550</span></div>
+    <div class="card">
+   <button onclick="changeColor(this)" id="alert" class="btn">A4</button><span class="hidden">550</span></div>
     
-    <div class=""><h4>B</h4></div>
-    <div  class="B1" ><button class="btn bg-slate-200" >B1</button></div>
-    <div class="B2"><button class="btn bg-slate-200">B2</button></div>
-    <div class="B3 "><button class="ml-7 btn bg-slate-200">B3</button></div>
-    <div class="B4"><button class="btn bg-slate-200">B4</button></div>
     
     
 
+   <div><h4>B</h4></div>  
+    <div class="card">
+    <button onclick="changeColor(this)" id="alert" class="btn">b1</button><span class="hidden">550</span></div>
+    <div class="card" >
+   <button onclick="changeColor(this)" id="alert" class="btn">b2</button><span class="  hidden">550</span></div>
+    <div class="card" >
+   <button onclick="changeColor(this)" id="alert" class=" btn">b3</button><span class="hidden">550</span></div>
+    <div class="card">
+   <button onclick="changeColor(this)" id="alert" class="btn">b4</button><span class="hidden">550</span></div>
     
-    <div class=""><h4>c</h4></div>
-    <div  class="C1" ><button class="btn bg-slate-200" >C1</button></div>
-    <div class="C2"><button class="btn bg-slate-200">C2</button></div>
-    <div class="C3 "><button class="ml-7 btn bg-slate-200">C3</button></div>
-    <div class="C4"><button class="btn bg-slate-200">C4</button></div>
     
-
     
-    <div class=""><h4>D</h4></div>
-    <div  class="D1" ><button class="btn bg-slate-200" >D1</button></div>
-    <div class="D2"><button class="btn bg-slate-200">D2</button></div>
-    <div class="D3 "><button class="ml-7 btn bg-slate-200">D3</button></div>
-    <div class="D4"><button class="btn bg-slate-200">D4</button></div>
     
 
     
-    <div class=""><h4>E</h4></div>
-    <div  class="E1" ><button class="btn bg-slate-200" >E1</button></div>
-    <div class="E2"><button class="btn bg-slate-200">E2</button></div>
-    <div class="E3 "><button class="ml-7 btn bg-slate-200">E3</button></div>
-    <div class="E4"><button class="btn bg-slate-200">E4</button></div>
-
-    
-    <div class=""><h4>F</h4></div>
-    <div  class="F1" ><button class="btn bg-slate-200" >F1</button></div>
-    <div class="F2"><button class="btn bg-slate-200">F2</button></div>
-    <div class="F3 "><button class="ml-7 btn bg-slate-200">F3</button></div>
-    <div class="F4"><button class="btn bg-slate-200">F4</button></div>
-
-    
-    <div class=""><h4>G</h4></div>
-    <div  class="G1" ><button class="btn bg-slate-200" >G1</button></div>
-    <div class="G2"><button class="btn bg-slate-200">G2</button></div>
-    <div class="G3 "><button class="ml-7 btn bg-slate-200">G3</button></div>
-    <div class="G4"><button class="btn bg-slate-200">G4</button></div>
-
-    
-    <div class=""><h4>H</h4></div>
-    <div  class="H1" ><button class="btn bg-slate-200" >H1</button></div>
-    <div class="H2"><button class="btn bg-slate-200">H2</button></div>
-    <div class="H3 "><button class="ml-7 btn bg-slate-200">H3</button></div>
-    <div class="H4"><button class="btn bg-slate-200">H4</button></div>
-
-    
-    <div class=""><h4>I</h4></div>
-    <div  class="I1" ><button class="btn bg-slate-200" >I1</button></div>
-    <div class="I2"><button class="btn bg-slate-200">I2</button></div>
-    <div class="I3 "><button class="ml-7 btn bg-slate-200">I3</button></div>
-    <div class="I4"><button class="btn bg-slate-200">I4</button></div>
-
-    
-    <div class=""><h4>J</h4></div>
-    <div  class="J1" ><button class="btn bg-slate-200" >J1</button></div>
-    <div class="J2"><button class="btn bg-slate-200">J2</button></div>
-    <div class="J3 "><button class="ml-7 btn bg-slate-200">J3</button></div>
-    <div class="J4"><button class="btn bg-slate-200">J4</button></div>
     
 
 
@@ -358,10 +316,10 @@
 
 
    <div class="relative left-28  bottom-60 border-solid border-0  h-96 w-96 rounded-xl     justify-around bg-gray-100">
-    <div  class=" flex gap-16  pr-5 pl-16">
+    <div  class=" flex gap-16  pr-5 pl-16 px-3 py-4">
       <div class="flex gap-1">
         <h4>Seat</h4>
-        <button class="btn btn-xs text-white bg-green-500 border-0 rounded-lg">2</button>
+        <button id="seatUp" class="btn btn-xs text-white bg-green-500 border-0 rounded-lg"><b id="seat-up">0</b></button>
       </div>
       
   
@@ -372,15 +330,12 @@
     
       
     </div>
-    <div class="border-dashed pr-2 pl-2  border-b-2 mt-5 mb-5 "></div>
+    <div class="border-dashed pr-2 pl-2  border-b-2 mt-5 mb-5  "></div>
     
   
     
   
-    <div  class=" flex gap-16  pr-5 pl-16">
-      <div >C2</div>
-      <div><h5>Economy</h5></div>
-      <div>550<h4></h4></div>
+    <div id="title-container" class="  gap-16  pr-5 pl-16 px-3">
       
   
     
@@ -388,51 +343,47 @@
     </div>
     <div class="border-l pr-2 pl-2  border-b-2 border-gray-300 mt-2 "></div>
     
-  <div class="flex justify-between pr-10 pl-10 mt-5">
-    <h3>Total-price</h3>
-    <h3>BDT 0</h3>
+  <div class="   flex justify-between pr-10 pl-10 mt-5">
+    <h2>Total-price</h2>
+    <h3>BDT- <span id="totalPrice"> </span>৳</h3>
 
   </div>
   <div class="p-5">
     <label class="input input-bordered flex items-center gap-2 ">
-      <input type="text" class="text-xs grow" placeholder="Have You any coupon?" />
-      <button class="btn  h-5 w-24 bg-green-400">Apply</button>
+
+
+
+      <input   type="text" id="input-field" class="text-xs grow" placeholder="Have You any coupon?" />
+
+
+      <button id="Apply-button" class="btn  h-5 w-24 bg-green-400">Apply</button>
     </label>
   </div>
-  <div class="flex justify-between  pr-10 pl-10">
+  <div class=" flex justify-between  pr-10 pl-10">
     <h3>Grand-total</h3>
-    <h3>BDT 0</h3>
+    <h3 >BDT- <span id="grandPrice"> </span>৳</h3>
 
   </div>
 
-<div class="mt-48">
-  <div class="">
-    <div class="label">
-      <span class="label-text">Passenger Name*</span>
-      
+
+
+  <div class="mt-36">
+    <!-- Open the modal using ID.showModal() method -->
+<button class="btn w-96 bg-green-400" onclick="my_modal_1.showModal()">Next</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box text-center">
+    <div class="pl-44"><img src="images/success.png" alt=""></div>
+    <div><h3 class="font-bold text-lg text-green-400">Success</h3></div>
+    <div><p class="py-4">Thank you for booking our best seats</p></div>
+    <div class="modal-action text-center">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button  class=" relative right-44 w-28  btn">Close</button>
+      </form>
     </div>
-    <input type="text" placeholder="enter your full name" class="input input-bordered bg-slate-100 border-0 w-full max-w-xs" />
   </div>
+</dialog>
 
-  <div class="">
-    <div class="label">
-      <span class="label-text">Phone Number*</span>
-      
-    </div>
-    <input type="number" placeholder="enter your phone number" class="input input-bordered bg-slate-100 border-0 w-full max-w-xs" />
-  </div>
-
-
-  <div class="">
-    <div class="label">
-      <span class="label-text">E-mail Id*</span>
-      
-    </div>
-    <input type="text" placeholder="enter your e-mail id" class="input input-bordered bg-slate-100 border-0 w-full max-w-xs" />
-  </div> 
-
-  <div class="mt-8">
-    <button class="btn btn-wide w-80 bg-green-400">Next</button>
   </div>
 
   <div class="flex justify-around mt-5">
@@ -479,6 +430,29 @@
         
 
 </div>
+</div>
+
+</main>
+
+
+
+
+
+
+
+
+<!-- modal box -->
+
+
+
+
+
+
+
+<!-- js -->
+
+<script src="bus-ticket.js"></script>
+
 
 
 </body>
