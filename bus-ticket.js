@@ -6,30 +6,6 @@ let grandPrice = 0;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // click korle form e nia jbe
 
 
@@ -64,6 +40,8 @@ const cards = document.querySelectorAll(".card")
 for (let index = 0; index < cards.length; index++) {
     const card = cards[index];
     card.addEventListener("click", function(){
+
+
        
 
         // get the title
@@ -136,16 +114,68 @@ const currentNumberElement = document.getElementById('seat-Down');
  
 
 
- 
+//  coupon code 
 
 
 const btn = document.getElementById("Apply-button");
 btn.addEventListener("click", function(){
+
+
     
     const couponElement = document.getElementById("input-field").value;
-   const couponCode = couponElement.split("").join("");
+    const couponCode = couponElement.split(" ").join(" ");
    console.log(couponCode);
   
+if(couponCode === "NEW15" ){
+
+const discountElement = document.getElementById("grandPrice");
+const discountAmount = grandPrice * 0.15;
+discountElement.innerText = discountAmount.toFixed(2);
+
+
+  document.getElementById("label").style.display = "none";
+
+
+
+
+
+
+} else if (couponCode === "Couple 20"){
+
+    const discountElement = document.getElementById("grandPrice");
+    const discountAmount = grandPrice * 0.2;
+    discountElement.innerText = discountAmount.toFixed(2);
+    
+
+
+    document.getElementById("label").style.display = "none";
+
+
+}
    
+else{
+
+    alert("invalid code");
+
+}
+
+
+
+
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
